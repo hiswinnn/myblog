@@ -1,4 +1,4 @@
-baseURL = 'https://example.pages.dev/'
+baseURL = 'https://myblog-4ha.pages.dev/'
 languageCode = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
 title = '我的博客'
