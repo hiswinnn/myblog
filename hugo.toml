@@ -1,0 +1,69 @@
+baseURL = 'https://example.pages.dev/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+title = '我的博客'
+theme = 'PaperMod'
+enableRobotsTXT = true
+
+[params]
+  env = 'production'
+  author = '博主'
+  description = '个人博客，记录生活与技术'
+  keywords = ['博客', '技术', '生活']
+  DateFormat = '2006-01-02'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = '你好，欢迎来到我的博客'
+    Content = '这里是我的个人空间，用来记录生活与学习的点滴。'
+
+  [[params.socialIcons]]
+    name = 'RSS'
+    url = 'index.xml'
+
+  [params.assets]
+    disableHLJS = true
+
+  [params.profileMode]
+    enabled = false
+
+[languages.zh-cn]
+  languageName = '中文'
+  weight = 1
+
+  [languages.zh-cn.params]
+    subtitle = '记录生活与技术'
+
+  [languages.zh-cn.taxonomies]
+    category = '分类'
+    tag = '标签'
+
+  [[menus.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 1
+  [[menus.main]]
+    identifier = 'tags'
+    name = '标签'
+    url = '/tags/'
+    weight = 2
+  [[menus.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 3
+  [[menus.main]]
+    identifier = 'archives'
+    name = '归档'
+    url = '/archives/'
+    weight = 4
